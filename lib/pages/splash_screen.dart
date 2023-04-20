@@ -33,6 +33,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Container(
           width: double.maxFinite,
@@ -40,11 +41,16 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 0),
               Column(
                 children: [
+                  SizedBox(
+                    // height: 300,
+                    child: Image.asset(
+                      "assets/img/splash_gif_1.gif",
+                      scale: 1,
+                    ),
+                  ),
                   MyConst.appDisplayName.text.xl5.bold.white.make().shimmer(primaryColor: Vx.purple300, secondaryColor: Colors.white),
-                  const SizedBox(height: 18),
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Text(
@@ -54,6 +60,10 @@ class _SplashScreenState extends State<SplashScreen> {
                     ),
                   ),
                 ],
+              ),
+              Image.asset(
+                "assets/img/splash_gif_2.gif",
+                scale: 2,
               ),
               const SizedBox(height: 0),
               const CircularProgressIndicator(color: Vx.purple300),

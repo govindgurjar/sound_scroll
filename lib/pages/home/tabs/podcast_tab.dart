@@ -14,15 +14,6 @@ class PodCastTab extends StatefulWidget {
 }
 
 class _PodCastTabState extends State<PodCastTab> {
-  List<String> fakeData = [
-    'Technology',
-    'Music',
-    "Podcast 1",
-    "Podcast 2",
-    "Podcast 3",
-    "Podcast 4",
-  ];
-
   @override
   Widget build(BuildContext context) {
     var audioProvider = Provider.of<AudioPlayerProvider>(context);
@@ -34,38 +25,80 @@ class _PodCastTabState extends State<PodCastTab> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const SizedBox(height: 84),
                   Container(
-                    margin: const EdgeInsets.only(left: 22),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    height: 284,
+                    child: Stack(
                       children: [
-                        Text(
-                          "Explore".toUpperCase(),
-                          maxLines: 1,
-                          style: const TextStyle(
-                            fontSize: 24,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        const SizedBox(height: 4),
-                        const SizedBox(
-                          width: 200,
-                          child: Text(
-                            "Discover Podcasts on your favorite topics.",
-                            maxLines: 2,
-                            style: TextStyle(
-                              fontSize: 14,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w600,
+                        Positioned.fill(
+                          child: Hero(
+                            tag: 'poster',
+                            child: Image.asset(
+                              "assets/img/data/podcast-poster.jpg",
+                              filterQuality: FilterQuality.medium,
+                              fit: BoxFit.cover,
                             ),
                           ),
                         ),
+                        Positioned.fill(
+                          child: Container(
+                            decoration: const BoxDecoration(
+                              gradient: LinearGradient(
+                                end: Alignment.bottomCenter,
+                                begin: Alignment.topCenter,
+                                colors: [
+                                  Color.fromARGB(0, 44, 41, 58),
+                                  Color.fromARGB(0, 44, 41, 58),
+                                  Color.fromARGB(0, 44, 41, 58),
+                                  Color.fromARGB(25, 44, 41, 58),
+                                  Color.fromARGB(50, 44, 41, 58),
+                                  Color.fromARGB(100, 44, 41, 58),
+                                  Color.fromARGB(120, 44, 41, 58),
+                                  Color.fromARGB(150, 44, 41, 58),
+                                  Color.fromARGB(180, 44, 41, 58),
+                                  Color.fromARGB(200, 44, 41, 58),
+                                  Color.fromARGB(230, 44, 41, 58),
+                                  // Color(0xFF2C293A),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Positioned(
+                          bottom: 28,
+                          left: 28,
+                          right: 18,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Explore".toUpperCase(),
+                                maxLines: 1,
+                                style: const TextStyle(
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              const SizedBox(
+                                width: 200,
+                                child: Text(
+                                  "Discover Podcasts on your favorite topics.",
+                                  maxLines: 2,
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   ),
-                  const SizedBox(height: 18),
+                  // const SizedBox(height: 18),
                   SectionDividerWithTitleAndBody(
                     title: '',
                     bodyWidget: Container(
@@ -84,8 +117,7 @@ class _PodCastTabState extends State<PodCastTab> {
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) {
-                                    return PodCastViewPage(
-                                        podCast: listOfPodCasts[index]);
+                                    return PodCastViewPage(podCast: listOfPodCasts[index]);
                                   },
                                 ),
                               );
@@ -205,9 +237,7 @@ class PodCastCard extends StatelessWidget {
 }
 
 class SectionDividerWithTitleAndBody extends StatelessWidget {
-  const SectionDividerWithTitleAndBody(
-      {Key? key, required this.title, required this.bodyWidget})
-      : super(key: key);
+  const SectionDividerWithTitleAndBody({Key? key, required this.title, required this.bodyWidget}) : super(key: key);
 
   final String title;
   final Widget bodyWidget;
