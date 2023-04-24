@@ -64,31 +64,27 @@ class PodCastViewPage extends StatelessWidget {
                           bottom: 16,
                           left: 18,
                           right: 18,
-                          child: Row(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    podCast.name.toUpperCase(),
-                                    maxLines: 1,
-                                    style: const TextStyle(
-                                      fontSize: 18,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                  ),
-                                  Text(
-                                    "Episodes - ${podCast.episodes.length}"
-                                        .toUpperCase(),
-                                    maxLines: 1,
-                                    style: const TextStyle(
-                                      fontSize: 14,
-                                      color: Color.fromARGB(255, 186, 186, 186),
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
+                              Text(
+                                podCast.name.toUpperCase(),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text(
+                                "Episodes - ${podCast.episodes.length}".toUpperCase(),
+                                maxLines: 1,
+                                style: const TextStyle(
+                                  fontSize: 14,
+                                  color: Color.fromARGB(255, 186, 186, 186),
+                                  fontWeight: FontWeight.w500,
+                                ),
                               ),
                             ],
                           ),
@@ -104,16 +100,12 @@ class PodCastViewPage extends StatelessWidget {
                         shrinkWrap: false,
                         itemBuilder: (BuildContext context, int index) {
                           return EpisodeCard(
-                            isPlaying: getWhichActiveIndexIsPlaying(
-                                audioProvider, index),
+                            isPlaying: getWhichActiveIndexIsPlaying(audioProvider, index),
                             imageUrl: podCast.posterUrl,
                             bodyText: podCast.episodes[index].shortDescription,
                             onTap: () {
-                              audioProvider.playAudioPlayer(
-                                  podCast.episodes[index].audioSourceUrl);
-                              audioProvider.setActivePodCast(
-                                  activeEpisodeIndex: index,
-                                  activePodCast: podCast);
+                              audioProvider.playAudioPlayer(podCast.episodes[index].audioSourceUrl);
+                              audioProvider.setActivePodCast(activeEpisodeIndex: index, activePodCast: podCast);
                               // audioProvider.pauseAudioPlayer();
                             },
                             title: podCast.episodes[index].title,
@@ -140,8 +132,7 @@ class PodCastViewPage extends StatelessWidget {
     );
   }
 
-  bool getWhichActiveIndexIsPlaying(
-      AudioPlayerProvider audioPlayerProvider, int index) {
+  bool getWhichActiveIndexIsPlaying(AudioPlayerProvider audioPlayerProvider, int index) {
     if (audioPlayerProvider.activePlayingPodCast == null) {
       return false;
     }
