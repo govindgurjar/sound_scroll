@@ -8,9 +8,9 @@
             "desc": "The chills you get when you listen to music, is mostly caused by the brain releasing dopamine while anticipating the peak moment of a song.",
             "url": "http://sc-bb.1.fm:8017/;",
             "icon": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/m8afyszryaqt.png",
-            "image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b5df4c18876369.562d0d4bd94cf.jpg",
+            "image": "https://i.pinimg.com/originals/c4/a9/88/c4a9884dde45c745c9d54f9aef7fbe9d.jpg",
             "lang": "Hindi",
-            "category": "pop",
+            "category": "01",
             "disliked": false,
             "order": 1
         },
@@ -25,7 +25,7 @@
             "image": "https://a10.gaanacdn.com/images/albums/10/72310/crop_480x480_72310.jpg",
             "lang": "Hindi",
             "disliked": false,
-            "category": "rock",
+            "category": "02",
             "order": 2
         },
         {
@@ -39,7 +39,7 @@
             "image": "https://www.theknotnews.com/wp-content/uploads/2017/02/Fifty-Shades-Poster.jpg",
             "lang": "English",
             "disliked": false,
-            "category": "hip-hop",
+            "category": "03",
             "order": 3
         },
         {
@@ -48,11 +48,11 @@
             "tagline": "English Hits",
             "color": "0xff066c53",
             "desc": "",
-            "url": "http://108.61.34.50:7094/stream",
+            "url": "https://radio.garden/api/ara/content/listen/0CDxvhRD/channel.mp3?1678654910438",
             "icon": "https://radiosindia.com/images/foxfm.jpg",
             "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "lang": "English",
-            "category": "hip-hop",
+            "category": "04",
             "disliked": false,
             "order": 4
         },
@@ -62,11 +62,11 @@
             "tagline": "London UK Asian Music",
             "color": "0xff0d487d",
             "desc": "",
-            "url": "http://icy-e-01-cr.sharp-stream.com/1458.mp3",
+            "url": "https://radio.garden/api/ara/content/listen/kFB69zxJ/channel.mp3?1678653672847",
             "icon": "https://static.radio.net/images/broadcasts/5d/9c/37907/1/c175.png",
-            "image": "https://i.pinimg.com/originals/c4/a9/88/c4a9884dde45c745c9d54f9aef7fbe9d.jpg",
+            "image": "https://images.unsplash.com/photo-1583661676511-6136039fc42a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
             "lang": "English",
-            "category": "jazz",
+            "category": "05",
             "disliked": false,
             "order": 5
         },
@@ -80,7 +80,7 @@
             "icon": "https://static.radio.net/images/broadcasts/8d/76/3600/1/c175.png",
             "image": "https://images.unsplash.com/photo-1601856254555-a9c0ebef8af3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
             "lang": "English",
-            "category": "rock",
+            "category": "06",
             "disliked": false,
             "order": 6
         },
@@ -90,11 +90,11 @@
             "tagline": "Love Songs",
             "color": "0xffa06a37",
             "desc": "The brain responds to music the same way it responds to something that you eat.",
-            "url": "https://wmirchi-lh.akamaihd.net/i/WMIRCHI_1@75780/index_1_a-p.m3u8?sd=10&rebase=on",
+            "url": "https://radio.garden/api/ara/content/listen/FGmWfWnc/channel.mp3?1678654980501",
             "icon": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/4evkagl48buu.jpeg",
             "image": "https://rukminim1.flixcart.com/image/416/416/poster/m/e/v/posterguy-sushant-singh-rajput-bollywood-painting-poster-original-imaehgpbwy9fsv8f.jpeg?q=70",
             "lang": "Hindi",
-            "category": "pop",
+            "category": "07",
             "disliked": false,
             "order": 7
         },
@@ -104,13 +104,41 @@
             "tagline": "Rocking Retro Hits",
             "color": "0xff090909",
             "desc": "Your heartbeat changes to mimics the music you listen to.",
-            "url": "https://puranijeanshdliv-lh.akamaihd.net/i/PuraniJeansHDLive_1_1@334555/index_1_a-p.m3u8?sd=10&rebase=on",
+            "url": "https://radio.garden/api/ara/content/listen/hAqJpLYg/channel.mp3?1678653385630",
             "icon": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/uvclzz6a6d7x.jpeg",
             "image": "https://i.pinimg.com/originals/7f/f6/13/7ff613ed815f1eb56a90794ec64eecfe.jpg",
             "lang": "Hindi",
-            "category": "classic",
+            "category": "08",
             "disliked": false,
             "order": 8
+        },
+        {
+            "id": 9,
+            "name": "Agra Radio",
+            "tagline": "Rocking Retro Hits",
+            "color": "0xff090909",
+            "desc": "Your heartbeat changes to mimics the music you listen to.",
+            "url": "https://stream-68.zeno.fm/y0bz0xpk11zuv?zs=6t9c2GkvRnuIJMAAl8e10g&listening-from-radio-garden=1678646112",
+            "icon": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/uvclzz6a6d7x.jpeg",
+            "image": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YWdyYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+            "lang": "Hindi",
+            "category": "09",
+            "disliked": false,
+            "order": 9
+        },
+        {
+            "id": 10,
+            "name": "Indore",
+            "tagline": "Rocking Retro Hits",
+            "color": "0xff090909",
+            "desc": "Your heartbeat changes to mimics the music you listen to.",
+            "url": "https://stream-27.zeno.fm/2vhb00mhky8uv?zs=fn0MEK-NRneNyYJL89BP4Q&listening-from-radio-garden=1678646196",
+            "icon": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/uvclzz6a6d7x.jpeg",
+            "image": "https://images.unsplash.com/photo-1535280783-cd33989a9522?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kb3JlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+            "lang": "Hindi",
+            "category": "10",
+            "disliked": false,
+            "order": 10
         }
     ]
 }
