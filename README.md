@@ -1,7 +1,5 @@
 # sound_scrolls
 
-A new Flutter project.
-
 ## Getting Started
 
 
